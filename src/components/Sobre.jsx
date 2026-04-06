@@ -126,9 +126,6 @@ export default function Sobre() {
             fontSize: '0.95rem',
             marginBottom: '1.25rem',
           }}>
-            Tudo começou em 2021, quando Anna decidiu transformar sua paixão por confeitaria em um negócio.
-            Em sua cozinha, ela testou dezenas de receitas até encontrar a combinação perfeita: chocolate belga
-            de alta qualidade, manteiga artesanal e o tempo certo de forno.
           </p>
 
           <p style={{
