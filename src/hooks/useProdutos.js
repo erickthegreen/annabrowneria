@@ -60,10 +60,41 @@ export function useProdutos() {
 
   useEffect(() => {
     const fetchProdutos = async () => {
-      await new Promise(r => setTimeout(r, 600))
-      setProdutos(PRODUTOS_MOCK)
-      setLoading(false)
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+      const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+      // Sem Supabase configurado → mock direto, sem tentar conectar
+      if (!supabaseUrl || !supabaseKey) {
+        await new Promise(r => setTimeout(r, 600))
+        setProdutos(PRODUTOS_MOCK)
+        setLoading(false)
+        return
+      }
+
+      try {
+        const { supabase } = await import('../lib/supabase')
+
+        // supabase pode ser null se as vars não estiverem setadas
+        if (!supabase) throw new Error('Cliente Supabase não inicializado')
+
+        const { data, error: sbError } = await supabase
+          .from('produtos')
+          .select('*')
+          .eq('disponivel', true)
+          .order('criado_em', { ascending: true })
+
+        if (sbError) throw sbError
+        setProdutos(data ?? PRODUTOS_MOCK)
+      } catch (err) {
+        console.error('Erro ao buscar produtos:', err)
+        // Sem mostrar mensagem de erro — apenas cai no mock silenciosamente
+        setError('Erro ao carregar produtos. Mostrando dados de exemplo.')
+        setProdutos(PRODUTOS_MOCK)
+      } finally {
+        setLoading(false)
+      }
     }
+
     fetchProdutos()
   }, [])
 
