@@ -23,18 +23,18 @@ const PRODUTOS_MOCK = [
   },
   {
     id: '3',
-    nome: 'Brownie Maracujá',
-    descricao: 'Combinação surpreendente de chocolate amargo com ganache de maracujá.',
+    nome: 'Brownie doce de leite',
+    descricao: 'Combinação surpreendente de chocolate amargo com ganache de doce de leite.',
     preco: 14.00,
-    url_img: 'https://placehold.co/600x400/2d1810/d4a843?text=Brownie+Maracuj%C3%A1',
+    url_img: 'https://placehold.co/600x400/2d1810/d4a843?text=Brownie+Doce+de+Leite',
     disponivel: true,
   },
   {
     id: '4',
-    nome: 'Brownie Red Velvet',
+    nome: 'Brownie morango',
     descricao: 'Massa aveludada vermelha com cream cheese cremoso e raspas de chocolate branco.',
     preco: 15.00,
-    url_img: 'https://placehold.co/600x400/2d1810/d4a843?text=Brownie+Red+Velvet',
+    url_img: 'https://placehold.co/600x400/2d1810/d4a843?text=Brownie+Morango',
     disponivel: true,
   },
   {
