@@ -39,7 +39,7 @@ const PRODUTOS_MOCK = [
   },
   {
     id: '5',
-    nome: 'Brownie Caramelo Salgado',
+    nome: 'Brownie Caramelo',
     descricao: 'Chocolate ao leite com caramelo artesanal e flor de sal. O equilibrio perfeito.',
     preco: 15.00,
     url_img: 'https://placehold.co/600x400/2d1810/d4a843?text=Brownie+Caramelo',
