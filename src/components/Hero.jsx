@@ -148,8 +148,8 @@ export default function Hero() {
           style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'clamp(1rem, 2vw, 1.2rem)',
-            fontWeight: 300,
-            color: 'var(--text-muted)',
+            fontWeight: 700,
+            color: '#fff',
             marginBottom: '2.5rem',
             lineHeight: 1.7,
             maxWidth: '520px',

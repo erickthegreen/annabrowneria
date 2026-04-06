@@ -135,8 +135,8 @@ export default function Sobre() {
             fontSize: '0.95rem',
             marginBottom: '2.5rem',
           }}>
-            Hoje, cada brownie é produzido sob encomenda, garantindo que você receba sempre o produto
-            mais fresco e saboroso. Sem conservantes, sem pressa, apenas ingredientes selecionados e muito carinho.
+            Aqui ficaria legal você contar como começou, algos nesse estilo: "Tudo começou na cozinha da Anna, onde a paixão por chocolate se transformou em receitas únicas. Cada brownie é feito à mão, com ingredientes selecionados e muito amor. Nossa missão é adoçar seu dia com sabores que surpreendem e conquistam."
+            mas deve ser algo mais curto, tipo 3-4 linhas, para não ficar muito pesado. O importante é transmitir a ideia de tradição, cuidado artesanal e amor pelo que faz, essa paradas.
           </p>
 
           {/* Stats em grid */}
@@ -144,7 +144,7 @@ export default function Sobre() {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gap: '1.5rem',
-          }}>
+          }}> aqui mais um breve resumo e etc, tipo "Em poucos anos, conquistamos mais de 200 clientes satisfeitos, criamos 12 sabores exclusivos e mantemos a tradição de fazer tudo à mão. Cada brownie é uma celebração do chocolate e do carinho que colocamos em cada receita." tipo isso.
             {STATS.map((stat, i) => (
               <motion.div
                 key={i}
