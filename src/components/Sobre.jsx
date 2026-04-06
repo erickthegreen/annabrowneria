@@ -83,7 +83,7 @@ export default function Sobre() {
               aspectRatio: '4/5',
               objectFit: 'cover',
             }}
-            src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=700&q=80&auto=format&fit=crop"
+            src="/brownie4.png"
             alt="Brownies artesanais saindo do forno"
             loading="lazy"
             onError={e => { e.target.src = 'https://placehold.co/700x800/2d1810/d4a843?text=AnnaBrowneria' }}
