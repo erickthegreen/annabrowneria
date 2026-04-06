@@ -3,10 +3,9 @@
 @import "tailwindcss";
 
 :root {
-  --chocolate:     #f5ede0;  /* fundo creme claro */
-  --chocolate-mid: #ede0cc;  /* seções levemente mais escuras */
-  --text-main:     #2d1810;  /* texto vira escuro para contrastar */
-  --text-muted:    #6b4c35;
+  --chocolate:     #1a0e08;
+  --chocolate-mid: #2d1810;
+  --chocolate-lt:  #4a2515;
   --caramel:       #c97d3a;
   --caramel-lt:    #e8a058;
   --gold:          #d4a843;
